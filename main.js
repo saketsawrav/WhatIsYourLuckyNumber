@@ -8,6 +8,14 @@ checkButton.addEventListener('click', clickHandler)
 function clickHandler() {
     var dob = dateOfBirth.value
     const sum = calculateSum(dob)
+    if (luckyNumber.value > 0 || typeof luckyNumber.value === 'number') {
+        checkLuckyNumber(sum)
+    } else {
+        outputBox.innerText = "Your input is Invalid"
+    }
+}
+
+function checkLuckyNumber(sum) {
     if (sum % luckyNumber.value === 0) {
         outputBox.innerText = "This is Your Lucky Number: " + luckyNumber.value
     } else {
