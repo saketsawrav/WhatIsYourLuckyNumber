@@ -6,6 +6,16 @@ const outputBox = document.querySelector("#output-box")
 checkButton.addEventListener('click', clickHandler)
 
 function clickHandler() {
-    // log values to check if everything works
-    console.log(dateOfBirth.value, luckyNumber.value)
+    var dob = dateOfBirth.value
+    const sum = calculateSum(dob)
+    console.log(sum)
+}
+
+function calculateSum (dob) {
+    dob = dob.replaceAll("-","")
+    let sum = 0
+    for(i=0;i<dob.length;i++){
+        sum = sum + Number(dob.charAt(i))
+    }
+    return sum
 }
