@@ -97,20 +97,26 @@ footer p.privacy-notice {
 .social {
     display: flex;
     flex-direction: row;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .social p {
     flex-grow: 1;
+    margin-top: 20px;
 }
 
 .social li {
     list-style: none;
-    display: inline;
+    display: inline-block;
     padding: 1rem;
 }
 
 .social a {
     text-decoration: none;
     color: black;
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
 }
