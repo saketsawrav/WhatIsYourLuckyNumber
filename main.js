@@ -9,6 +9,13 @@ function clickHandler() {
     var dob = dateOfBirth.value
     const sum = calculateSum(dob)
     console.log(sum)
+    if (sum % luckyNumber.value === 0) {
+        outputBox.innerText = "This is Your Lucky Number: " + luckyNumber.value
+        console.log("This is Your Lucky Number: " + luckyNumber.value)
+    } else {
+        outputBox.innerText = "Sorry! But " + luckyNumber.value + " is not a lucky Number for you."
+        console.log("Sorry! But " + luckyNumber.value + " is not a lucky Number for you.")
+    }
 }
 
 function calculateSum (dob) {
