@@ -60,10 +60,12 @@ body {
 }
 
 .container button {
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     padding: 0.5rem;
     width: fit-content;
     margin: auto;
+    background-color: var(--bak-color);
+    border: 1px solid grey;
 }
 
 .container #output-box {
