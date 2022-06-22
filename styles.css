@@ -53,7 +53,7 @@ body {
 }
 
 .container #lucky-number {
-    width: fit-content;
+    width: 25%;
     margin: 0.5rem auto;
     border-radius: 1rem;
     padding: 0.2rem;
