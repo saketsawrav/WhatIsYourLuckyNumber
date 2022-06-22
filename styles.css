@@ -1,0 +1,77 @@
+@import url('https://v1.fontapi.ir/css/SFProDisplay:400');
+
+:root {
+    --primary-color: #a10000;
+    --stone-white: #E7E5E4;
+    --bak-color: #FEF2F2;
+}
+
+* {
+    font-family: 'SF Pro Display', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--stone-white);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    background-color: var(--bak-color);
+    padding: 2rem;
+    border: 2px solid var(--stone-white);
+    border-radius: 1rem;
+}
+
+.container h1 {
+    text-align: center;
+    font-weight: bolder;
+    padding: 1rem;
+}
+
+.container p {
+    font-size: large;
+    text-align: center;
+}
+
+.container #date-of-birth {
+    width: fit-content;
+    margin: 0.5rem auto;
+    border-radius: 1rem;
+    padding: 0.2rem;
+}
+
+.container label {
+    padding: 0.5rem;
+    width: fit-content;
+    margin: auto;
+    font-weight: 700;
+}
+
+.container #lucky-number {
+    width: fit-content;
+    margin: 0.5rem auto;
+    border-radius: 1rem;
+    padding: 0.2rem;
+}
+
+.container button {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: fit-content;
+    margin: auto;
+}
+
+.container #output-box {
+    border: 1px solid var(--stone-white);
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    width: 60%;
+    margin: auto;
+    margin-top: 1rem;
+}
