@@ -8,20 +8,17 @@ checkButton.addEventListener('click', clickHandler)
 function clickHandler() {
     var dob = dateOfBirth.value
     const sum = calculateSum(dob)
-    console.log(sum)
     if (sum % luckyNumber.value === 0) {
         outputBox.innerText = "This is Your Lucky Number: " + luckyNumber.value
-        console.log("This is Your Lucky Number: " + luckyNumber.value)
     } else {
         outputBox.innerText = "Sorry! But " + luckyNumber.value + " is not a lucky Number for you."
-        console.log("Sorry! But " + luckyNumber.value + " is not a lucky Number for you.")
     }
 }
 
-function calculateSum (dob) {
-    dob = dob.replaceAll("-","")
+function calculateSum(dob) {
+    dob = dob.replaceAll("-", "")
     let sum = 0
-    for(i=0;i<dob.length;i++){
+    for (i = 0; i < dob.length; i++) {
         sum = sum + Number(dob.charAt(i))
     }
     return sum
